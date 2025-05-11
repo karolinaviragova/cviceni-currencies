@@ -7,7 +7,7 @@ export const HomePage = () => {
 
   const handleCurrencyChange = (e) => {
     setCurrency(e.target.value);
-  };
+   };
 
   return (
     <div className="container">
@@ -27,7 +27,7 @@ export const HomePage = () => {
             </select>
           </div>
         </form>
-        <Rate />
+        <Rate from={currency}/>
       </div>
     </div>
   );
